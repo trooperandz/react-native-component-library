@@ -1,3 +1,3 @@
 # react-native-component-library
 
-### An exploratory storybook playground for demoing different React Native components and methods
+### An exploratory React Native storybook playground for demoing different components and methods
