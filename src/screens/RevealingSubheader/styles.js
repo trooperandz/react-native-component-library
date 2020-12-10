@@ -16,18 +16,6 @@ export const Text = styled.Text`
   font-size: 18px;
 `;
 
-export const SubHeader = styled.View`
-  position: absolute;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  top: 60px;
-  z-index: 1;
-  background-color: #ccc;
-  height: 60px;
-  width: 100%;
-`;
-
 export const CardContainer = styled.View`
   padding: 24px;
   border: 1px solid #ccc;

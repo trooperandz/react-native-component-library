@@ -9,7 +9,7 @@ import {
   NativeScrollEvent,
 } from 'react-native';
 
-import data from '../../utils/mockData.json';
+import data from '../../utils/mockDataShort.json';
 import * as S from './styles';
 
 const { styles } = S;
@@ -33,10 +33,6 @@ const DemoScreen = () => {
 
   const translateStyle = {
     transform: [{ translateY }],
-  };
-
-  const handleScrollBegin = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    console.log(e.nativeEvent.contentOffset);
   };
 
   const handleOnScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -63,7 +59,6 @@ const DemoScreen = () => {
         bounces={false}
         style={translateStyle}
         keyExtractor={(item) => item.id.toString()}
-        onMomentumScrollBegin={handleScrollBegin}
         onScroll={handleOnScroll}
         scrollEventThrottle={16}
         data={data}
